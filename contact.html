@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frio Holidays</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Frio Holidays</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-modify" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown nav-space">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sub-menu1</a></li>
+                            <li><a class="dropdown-item" href="#">Sub-menu2</a></li>
+                            <li><a class="dropdown-item" href="#">Sub-menu3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-space">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item nav-space">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <img class="about-img" style="margin-top: 7rem;" src="contactUs.jpg" width="100%" alt="">
+        <nav class="breadcrumb-contact" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a style="text-decoration: none; color: aliceblue;" href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+    </header>
+    <section>
+        <form class="row g-3 needs-validation form-contact" novalidate>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01"  required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02"  required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip02" class="form-label">Email-address</label>
+                <input type="email" class="form-control" id="validationTooltip02"  required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip03" class="form-label">Contact No</label>
+              <input maxlength="10" type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid Mobile Number.
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <textarea style="resize: none;" cols="40" rows="5"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+          <div id="map"></div>
+    </section>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2UfCcqUfdoKxnc1i2vsIdCO2QKNJDUng&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-6 address">
+                <p style="color: aliceblue; font-size: 20px;" href="#">| Address (Head-office)</p>
+                <p>3rd Floor, Quentin Buildings, 2342 Street, Marine Lines, Mumbai-400037, Maharashtra, India </p>
+            </div>
+            <div class="col-6 quicklinks">
+                <p style="color: aliceblue; font-size: 20px;" href="#">| Quicklinks</a>
+                <div class="quicklinks-container">
+                    <a style="text-decoration: none; color: aliceblue;" href="index.html">Home</a>
+                    <a style="text-decoration: none; color: aliceblue;" href="about.html">About</a>
+                    <a style="text-decoration: none; color: aliceblue;" href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="col links_ ">
+            <a href="#"><img class="soc_img" src="instagram.png" alt=""></a>
+            <a href="#"><img class="soc_img" src="twitter.png" alt=""></a>
+            <a href="#"><img class="soc_img" src="facebook.png" alt=""></a>
+            <a href="#"><img class="soc_img" src="google.png" alt=""></a>                    
+        </div>
+        <div class="copyright-text">
+            <p>Frio Holidays is a Registered MSP/ISO of Frio consultancy, Inc. Mumbai<br>
+                © All right Reserved 2021</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</html>
